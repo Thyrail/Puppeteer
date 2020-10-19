@@ -16,12 +16,13 @@ let transporter = nodemailer.createTransport({
 // Step 2
 let mailOptions = {
     from: process.env.MAIL_THY,
-    to: [process.env.MAIL_RDU + process.env.MAIL_DHE],
+    to: [process.env.MAIL_RDU, process.env.MAIL_DHE],
     cc: [process.env.MAIL_ATH],
     subject: process.env.SJ_SERIOUS,
-    text:    process.env.T_GH_PUP +
-             process.env.URL_GH_PUP +
-             process.env.T_SERIOUS
+    text: process.env.T_02 +
+          process.env.T_GH_PUP +
+          process.env.URL_GH_PUP +
+          process.env.T_SERIOUS
 };
 
 // Step 3
